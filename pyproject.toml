@@ -1,0 +1,18 @@
+[project]
+name = "comfyui-detailfixer"
+description = "Fix anything in a generated image (garbled logos, faces, hands, clothing): detect it with SAM 3, regenerate just that area with an edit model (local Qwen or API), and blend it back."
+version = "1.0.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[project.urls]
+Repository = "https://github.com/Somarawad/ComfyUI-DetailFixer"
+
+[tool.comfy]
+PublisherId = "somarawad"
+DisplayName = "Detail Fixer"
+Icon = ""
+
+[tool.pytest.ini_options]
+addopts = "--import-mode=importlib -p no:cacheprovider"
+testpaths = ["tests"]
